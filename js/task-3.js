@@ -11,7 +11,7 @@ const profile = {
     },
   
     getInfo() {
-      return `${profile.username} has ${profile.playTime} active hours!`;
+      return `${this.username} has ${this.playTime} active hours!`;
   }
   };
   
@@ -22,4 +22,5 @@ const profile = {
   
   profile.updatePlayTime(20);
   console.log(profile.getInfo()); // "Marco has 320 active hours!"
+
 
