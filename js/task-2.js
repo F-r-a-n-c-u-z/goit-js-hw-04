@@ -1,12 +1,12 @@
 function calcAverageCalories(days) {
-  let value = 0;
-  let a = 0;
+  let all_calories = 0;
+  let mid_number = 0;
 
   for (const iteam of days) {
-    value += iteam.calories;
-    a = value / days.length;
+    all_calories += iteam.calories;
+    mid_number = all_calories / days.length;
   }
-  return `Середньодобова кількості калорій: ${a}`
+  return `Середньодобова кількості калорій: ${mid_number}`
 }
 
 console.log(
