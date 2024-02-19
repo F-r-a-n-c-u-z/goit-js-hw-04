@@ -11,14 +11,9 @@ const profile = {
     },
   
     getInfo() {
-      // `${username} has ${playTime} active hours!`;
+      return `${profile.username} has ${profile.playTime} active hours!`;
   }
-  
   };
-  profile.changeUsername('Mila Poly');
-  console.log(profile.username);
-  profile.updatePlayTime(20);
-  console.log(profile.playTime);
   
   console.log(profile.getInfo()); // "Jacob has 300 active hours!"
   
@@ -27,3 +22,4 @@ const profile = {
   
   profile.updatePlayTime(20);
   console.log(profile.getInfo()); // "Marco has 320 active hours!"
+
